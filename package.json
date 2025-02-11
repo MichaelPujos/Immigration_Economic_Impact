@@ -1,0 +1,19 @@
+{
+  "name": "immigration-economic-impact",
+  "version": "1.0.0",
+  "description": "Interactive data visualization of immigration’s economic impact.",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.0",
+    "chart.js": "^3.9.1",
+    "react-chartjs-2": "^4.3.1",
+    "d3": "^7.8.5",
+    "axios": "^1.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  }
+}
