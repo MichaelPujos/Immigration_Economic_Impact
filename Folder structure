@@ -1,0 +1,14 @@
+Immigration_Economic_Impact/
+│── data/                # Raw datasets in CSV/JSON format
+│── src/                 # React source code
+│   ├── components/      # Reusable React components (charts, tables)
+│   ├── pages/           # Different pages for your app (Home, Analysis)
+│── assets/              # Images, logos, icons
+│── notebooks/           # Any Jupyter Notebooks used for data analysis (Optional)
+│── README.md            # Overview of the project
+│── package.json         # Dependencies for React
+│── index.js             # Main entry point for the app
+│── App.js               # Main React component
+│── .gitignore           # Files to ignore in GitHub
+│── LICENSE              # License for open-source compliance
+│── CONTRIBUTING.md      # Guidelines for contributors (Optional)
