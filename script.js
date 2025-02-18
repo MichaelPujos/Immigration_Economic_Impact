@@ -1,50 +1,23 @@
-// Labor Force Participation Chart
-const laborCtx = document.getElementById("laborForceChart").getContext("2d");
-new Chart(laborCtx, {
-    type: "line",
-    data: {
-        labels: [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
-        datasets: [
-            {
-                label: "Foreign-born (%)",
-                data: [66.0, 66.1, 66.2, 66.3, 66.4, 66.5, 66.6, 66.7, 66.8, 66.9, 67.0],
+function createChart(chartId, chartType, chartLabels, chartData, chartLabel, backgroundColors = null) {
+    const ctx = document.getElementById(chartId).getContext("2d");
+    new Chart(ctx, {
+        type: chartType,
+        data: {
+            labels: chartLabels,
+            datasets: [{
+                label: chartLabel,
+                data: chartData,
+                backgroundColor: backgroundColors || "blue",
                 borderColor: "blue",
+                borderWidth: 2,
                 fill: false
-            },
-            {
-                label: "Native-born (%)",
-                data: [62.0, 62.1, 62.2, 62.3, 62.4, 62.5, 62.6, 62.7, 62.8, 62.9, 63.0],
-                borderColor: "red",
-                fill: false
-            }
-        ]
-    }
-});
+            }]
+        }
+    });
+}
 
-// Employment by Industry Chart
-const empCtx = document.getElementById("employmentChart").getContext("2d");
-new Chart(empCtx, {
-    type: "bar",
-    data: {
-        labels: ["Agriculture", "Construction", "Hospitality", "Manufacturing", "Professional Services"],
-        datasets: [{
-            label: "Percentage of Foreign-born Workers",
-            data: [17.4, 24.0, 22.0, 18.0, 14.0],
-            backgroundColor: "blue"
-        }]
-    }
-});
-
-// Tax Contributions Chart
-const taxCtx = document.getElementById("taxChart").getContext("2d");
-new Chart(taxCtx, {
-    type: "pie",
-    data: {
-        labels: ["Federal Taxes", "State Taxes"],
-        datasets: [{
-            label: "Tax Contributions (in billions USD)",
-            data: [46.8, 29.3],
-            backgroundColor: ["blue", "red"]
-        }]
-    }
-});
+createChart("laborForceChart", "line", [2014, 2016, 2018, 2020, 2022, 2024], [66, 67, 68, 69, 70, 71], "Labor Force Participation (%)");
+createChart("employmentChart", "bar", ["Agriculture", "Construction", "Hospitality", "Manufacturing"], [18, 22, 25, 15], "Industry Employment (%)");
+createChart("taxChart", "pie", ["Federal Taxes", "State Taxes"], [100, 60], "Tax Contributions (Billion USD)", ["blue", "red"]);
+createChart("immigrantPopulationChart", "line", [2014, 2016, 2018, 2020, 2022, 2024], [42, 45, 48, 50, 52, 54], "Total Immigrant Population (millions)");
+createChart("unauthorizedWorkforceChart", "bar", [2014, 2016, 2018, 2020, 2022, 2024], [7, 7.5, 8, 8.5, 9, 9.5], "Unauthorized Immigrant Workforce (millions)");
