@@ -2,77 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Immigration Economic Impact</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="description" content="An interactive data visualization project on immigration's role in the U.S. economy.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Immigration Economic Impact">
+    <meta property="og:description" content="Explore immigration's contributions to the U.S. economy through interactive maps and data visualizations.">
+    <meta property="og:image" content="%PUBLIC_URL%/logo192.png">
+    <meta property="og:url" content="https://your-deployed-link.com">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Immigration Economic Impact</h1>
-        <p>Understanding how immigrants contribute to the U.S. economy</p>
-    </header>
-
-    <section id="overview">
-        <h2>📌 Overview</h2>
-        <p>This project explores how immigrants contribute to key sectors of the U.S. economy and the potential economic impacts of deportation policies.</p>
-    </section>
-
-    <section id="research-question">
-        <h2>🎯 Research Question</h2>
-        <p><strong>"How do immigrants contribute to key sectors of the U.S. economy, and what are the potential economic impacts of recent deportation policies?"</strong></p>
-    </section>
-
-    <section id="data-sources">
-        <h2>📊 Data Sources</h2>
-        <ul>
-            <li><a href="https://www.bls.gov/news.release/forbrn.nr0.htm" target="_blank">Bureau of Labor Statistics - Labor Force Participation</a></li>
-            <li><a href="https://www.migrationpolicy.org/data/state-profiles/state/workforce/US" target="_blank">Migration Policy Institute - Employment by Industry</a></li>
-            <li><a href="https://www.americanimmigrationcouncil.org/research/mass-deportation" target="_blank">American Immigration Council - Tax Contributions</a></li>
-        </ul>
-    </section>
-
-    <section id="graphs">
-        <h2>📊 Data Visualizations</h2>
-        
-        <h3>Labor Force Participation Over Time</h3>
-        <canvas id="laborForceChart"></canvas>
-
-        <h3>Immigrant Employment by Industry</h3>
-        <canvas id="employmentChart"></canvas>
-
-        <h3>Tax Contributions of Immigrants</h3>
-        <canvas id="taxChart"></canvas>
-
-        <h3>Total Immigrant Population (2014-2024)</h3>
-        <canvas id="immigrantPopulationChart"></canvas>
-
-        <h3>Unauthorized Immigrant Workforce (2014-2024)</h3>
-        <canvas id="unauthorizedWorkforceChart"></canvas>
-
-        <h3>Net Immigration (2014-2024)</h3>
-        <canvas id="netImmigrationChart"></canvas>
-
-        <h3>Top Immigrant-Origin Countries (2022)</h3>
-        <canvas id="immigrantCountriesChart"></canvas>
-
-        <h3>Immigration Enforcement Actions (2014-2024)</h3>
-        <canvas id="enforcementChart"></canvas>
-
-        <h3>Economic Contributions of Immigrants (2024)</h3>
-        <canvas id="economicContributionsChart"></canvas>
-
-        <h3>Projected Labor Force Growth Attributable to Immigrants</h3>
-        <canvas id="laborForceGrowthChart"></canvas>
-
-        <h3>Immigrant vs. Native-Born Employment Rates</h3>
-        <canvas id="employmentRatesChart"></canvas>
-    </section>
-
-    <footer>
-        <p>📌 Created by <strong>Michael Pujos</strong> | <a href="https://github.com/MichaelPujos/Immigration_Economic_Impact" target="_blank">View on GitHub</a></p>
-    </footer>
-
-    <script src="script.js"></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
 </body>
 </html>
